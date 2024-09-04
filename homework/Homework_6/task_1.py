@@ -13,9 +13,9 @@ def add_ing_to_words(text):
 
 
 text = (
-        "Etiam tincidunt neque erat, quis molestie enim imperdiet vel. Integer urna nisl, facilisis vitae semper at,"
-        + " dignissim vitae libero"
-        )
+    "Etiam tincidunt neque erat, quis molestie enim imperdiet vel. Integer urna nisl, facilisis vitae semper at,"
+    + " dignissim vitae libero"
+)
 
 result_text = add_ing_to_words(text)
 
