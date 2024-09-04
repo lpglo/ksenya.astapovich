@@ -1,5 +1,6 @@
 import re
 
+
 def add_ing_to_words(text):
     def add_ing(word):
         return word + 'ing' if word else ''
@@ -8,10 +9,13 @@ def add_ing_to_words(text):
 
     result = ' '.join([add_ing(word) if word.isalpha() else word for word in words])
 
-    return result
+    return re.sub(r'\s+([^\w\s])', r'\1', result)
 
 
-text = "Etiam tincidunt neque erat, quis molestie enim imperdiet vel. Integer urna nisl, facilisis vitae semper at, dignissim vitae libero"
+text = (
+        "Etiam tincidunt neque erat, quis molestie enim imperdiet vel. Integer urna nisl, facilisis vitae semper at,"
+        + " dignissim vitae libero"
+        )
 
 result_text = add_ing_to_words(text)
 
