@@ -10,6 +10,7 @@ def fibonacci():
 
 fib_gen = fibonacci()
 
+
 positions = [5, 200, 1000, 100000]
 results = {}
 
