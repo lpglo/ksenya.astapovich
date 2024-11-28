@@ -8,8 +8,8 @@ def fibonacci():
         yield a
         a, b = b, a + b
 
-fib_gen = fibonacci()
 
+fib_gen = fibonacci()
 
 positions = [5, 200, 1000, 100000]
 results = {}
