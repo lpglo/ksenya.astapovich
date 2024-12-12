@@ -9,4 +9,3 @@ print(f"Full month name: {full_month_name}")
 
 formatted_date = date_object.strftime("%d.%m.%Y, %H:%M")
 print(f"Formatted date: {formatted_date}")
-
