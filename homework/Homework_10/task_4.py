@@ -7,6 +7,7 @@ PRICE_LIST = '''тетрадь 50р
 рюкзак 500р'''
 
 
-price_dict = {item.split()[0]: int(item.split()[1][:-1]) for item in PRICE_LIST.split('\n')}
+price_dict = {item.split()[0]: int(item.split()[1][:-1])
+              for item in PRICE_LIST.split('\n')}
 
 print(price_dict)

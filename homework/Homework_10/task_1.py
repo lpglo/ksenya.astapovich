@@ -1,8 +1,6 @@
 def finish_me(func):
 
-
     def wrapper(*args, **kwargs):
-
         result = func(*args, **kwargs)
 
         print("finished")
